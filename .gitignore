@@ -1,0 +1,88 @@
+# --- Resultados de compilación (se regeneran con los scripts build-*.sh) ---
+# dentro de un directorio excluido, y el staging del .deb SÍ debe versionarse.
+build/*
+qt/build/
+dist/
+
+# Staging del .deb hecho a mano (wrapper usr/bin, .desktop, iconos, DEBIAN/control):
+# se versiona, salvo el árbol que genera "cmake --install".
+!build/deb-root/
+build/deb-root/opt/
+
+# Herramientas descargadas (appimagetool)
+build/tools/
+
+# Scripts de build (rutas específicas de cada máquina; documentado en README)
+build-appimage.sh
+build-deb.sh
+build-rpm.sh
+build-android.sh
+build-windows.bat
+build-macos.sh
+setup-build.sh
+
+# Restos de compilación sueltos
+*.o
+*.a
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+*_autogen/
+.qt/
+.rcc/
+
+# --- Traducciones compiladas ---
+*.qm
+
+# --- Paquetes e instaladores (distribuir por "Releases", no en el repo) ---
+# El script .iss SÍ se sube (es código fuente)
+installers/*.deb
+installers/*.rpm
+installers/*.AppImage
+installers/*.exe
+installers/*.dmg
+apks/
+*.apk
+*.aab
+*.idsig
+
+# --- Android ---
+qt/android/build/
+qt/android/.gradle/
+qt/android/local.properties
+# Claves de firma: NUNCA subirlas
+*.keystore
+*.jks
+key.properties
+
+# Certificado TLS embebido: contiene una CLAVE PRIVADA. No se sube; CMake lo
+# genera automáticamente con openssl la primera vez que configuras el proyecto.
+qt/tls/*.pem
+
+# --- Generados en macOS / Windows ---
+qt/appicon.icns        # lo genera build-macos.sh con iconutil
+.DS_Store
+Thumbs.db
+*.pdb
+*.ilk
+
+# --- Editores / IDE ---
+.vscode/
+.idea/
+*.user
+*.user.*
+CMakeLists.txt.user*
+.qmlls.ini
+compile_commands.json
+.cache/
+.claude
+
+# --- Temporales ---
+*~
+*.swp
+*.log
+*.tmp
+core

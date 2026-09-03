@@ -1,0 +1,3 @@
+// Icono de la aplicación en Windows (se incrusta en vorlan.exe vía windres/RC).
+// El ID numérico más bajo se usa como icono del ejecutable en el Explorador.
+1 ICON "appicon.ico"

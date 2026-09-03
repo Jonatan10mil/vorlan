@@ -1,0 +1,10 @@
+Package: vorlan
+Version: 1.01
+Section: net
+Priority: optional
+Architecture: amd64
+Installed-Size: 127464
+Depends: libc6, libglib2.0-0, libgl1, libfontconfig1, libfreetype6, libx11-6, libxcb1, libxkbcommon0, libxcb-cursor0, libdbus-1-3
+Maintainer: Vorlan <vorlan@local>
+Description: Vorlan - transferencia de archivos por LAN (Qt)
+ Envia archivos, carpetas y texto entre dispositivos de la red local.

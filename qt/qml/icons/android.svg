@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff">
+  <!-- antenas -->
+  <path d="M7.9 5.2 6.5 3.1" fill="none" stroke="#fff" stroke-width="1.3" stroke-linecap="round"/>
+  <path d="M16.1 5.2 17.5 3.1" fill="none" stroke="#fff" stroke-width="1.3" stroke-linecap="round"/>
+  <!-- cabeza (cupula) con ojos como huecos -->
+  <path fill-rule="evenodd" d="M12 4.2c-3.4 0-6.1 2.6-6.1 5.9V10.4h12.2V10.1C18.1 6.8 15.4 4.2 12 4.2Zm-2.3 3.6a.85.85 0 1 1 0-1.7.85.85 0 0 1 0 1.7Zm4.6 0a.85.85 0 1 1 0-1.7.85.85 0 0 1 0 1.7Z"/>
+  <!-- cuerpo -->
+  <path d="M5.9 11.4h12.2v5.7a1.5 1.5 0 0 1-1.5 1.5H7.4a1.5 1.5 0 0 1-1.5-1.5z"/>
+  <!-- brazos -->
+  <rect x="3.2" y="11.4" width="1.7" height="6.3" rx=".85"/>
+  <rect x="19.1" y="11.4" width="1.7" height="6.3" rx=".85"/>
+  <!-- piernas -->
+  <rect x="8" y="18.4" width="1.7" height="3.4" rx=".85"/>
+  <rect x="14.3" y="18.4" width="1.7" height="3.4" rx=".85"/>
+</svg>

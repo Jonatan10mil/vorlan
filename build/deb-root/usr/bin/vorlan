@@ -1,0 +1,7 @@
+#!/bin/sh
+DIR=/opt/vorlan
+export LD_LIBRARY_PATH="$DIR/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+export QT_PLUGIN_PATH="$DIR/plugins"
+export QML2_IMPORT_PATH="$DIR/qml"
+export QML_IMPORT_PATH="$DIR/qml"
+exec "$DIR/bin/vorlan" "$@"

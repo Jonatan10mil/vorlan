@@ -1,0 +1,20 @@
+[Desktop Entry]
+Type=Application
+Name=VorLAN
+Comment=LAN file transfer
+Comment[es]=Transferencia de archivos por LAN
+Comment[fr]=Transfert de fichiers par LAN
+Comment[de]=Dateiübertragung im lokalen Netzwerk
+Comment[pt]=Transferência de arquivos por LAN
+Comment[it]=Trasferimento file via LAN
+Comment[ru]=Передача файлов по локальной сети
+Comment[ja]=LAN経由のファイル転送
+Comment[zh]=局域网文件传输
+Comment[ar]=نقل الملفات عبر الشبكة المحلية
+Comment[ko]=LAN 파일 전송
+Comment[hi]=LAN द्वारा फ़ाइल स्थानांतरण
+Exec=vorlan
+Icon=vorlan
+Terminal=false
+Categories=Network;FileTransfer;
+StartupWMClass=vorlan
